@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>Javascript Tutorial</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;margin-top:20px;">Change Value When Press Buttons</h1>
+
+                
+                <div class="row" style="padding:20px 20px;margin-top:60px;">
+                    <div class="col-md-4"><button class="btn btn-success btn-block" style="font-size:60px;" onclick="inc();"><ion-icon name="add-circle-outline"></ion-icon></button></div>
+                    <div class="col-md-4">
+                        <input type="hidden" class="text-center" id="myNumber" value="0">
+                        <h1 class="text-center" style="font-size:60px;border:none;font-weight: bold;" id="valueText">0</h1>
+
+                    </div>
+                    <div class="col-md-4"><button class="btn btn-danger btn-block" style="font-size:60px;" onclick="dec();"><ion-icon name="remove-circle-outline"></ion-icon></button></div>
+                </div>
+
+
+                <div class="row" style="padding:20px 20px;margin-top:10px;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        
+                        <button class="btn btn-warning btn-block" style="font-size:30px;" onclick="resetBtn();"><ion-icon name="refresh-outline"></ion-icon> Reset</button>
+
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+
+
+
+                <div class="row" style="padding:20px 20px;margin-top:10px;">
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul2();"><ion-icon name="close-outline"></ion-icon> 2</button></div>
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul3();"><ion-icon name="close-outline"></ion-icon> 3</button></div>
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul4();"><ion-icon name="close-outline"></ion-icon> 4</button></div>
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul5();"><ion-icon name="close-outline"></ion-icon> 5</button></div>
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul6();"><ion-icon name="close-outline"></ion-icon> 6</button></div>
+                    <div class="col-md-2"><button class="btn btn-primary btn-block mt-2" style="font-size:30px;" onclick="mul7();"><ion-icon name="close-outline"></ion-icon> 7</button></div>
+                </div>
+
+
+
+                
+    </div>
+</body>
+</html>
+
+<script>
+
+    var num = parseInt(document.getElementById('myNumber').value); //get value for variable after convert to integer
+
+    //Increment
+    function inc()
+    {
+        num = num+1; // number = number+1
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Decrement
+    function dec()
+    {
+        num = num-1; // number = number-1
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 2
+    function mul2()
+    {
+        num = num+2; // number = number X 2
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 3
+    function mul3()
+    {
+        num = num+3; // number = number X 3
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 4
+    function mul4()
+    {
+        num = num+4; // number = number X 4
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 5
+    function mul5()
+    {
+        num = num+5; // number = number X 5
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 6
+    function mul6()
+    {
+        num = num+6; // number = number X 6
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Multiple X 7
+    function mul7()
+    {
+        
+        num = num+7; // number = number X 7
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+    //Reset Value
+    function resetBtn()
+    {
+        
+        num = 0; // number = 0
+        document.getElementById('valueText').innerHTML = num; //show value
+
+    }
+
+</script>
